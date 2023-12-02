@@ -16,8 +16,8 @@ public class Exercise1 {
         for (int i=0; i< n; i++){
             System.out.println("Digite um número");
             array[i] = sc.nextInt();
-
         }
+
         System.out.println("Números negativos:");
         for (int i=0; i<n; i++){
             if (array[i] < 0){

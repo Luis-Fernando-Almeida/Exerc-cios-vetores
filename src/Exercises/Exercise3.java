@@ -34,6 +34,22 @@ public class Exercise3 {
         double avg = sum / array.length;
 
         System.out.printf("AVERAGE HEIGHT: %.2f%n", avg);
+
+        int cont = 0;
+        for(int i=0; i<n; i++){
+            if (array[i].getAge() < 16){
+                cont ++;
+            }
+        }
+        double percent = cont * 100.0 /n;
+        System.out.printf("Pessoas com menos de 16 anos %.1f%%%n", percent);
+
+        for(int i=0; i<n; i++){
+            if (array[i].getAge() < 16){
+                System.out.printf("%s\n", array[i].getName());
+            }
+        }
+
         sc.close();
     }
 }
